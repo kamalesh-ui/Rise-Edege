@@ -17,6 +17,8 @@ const MODELS = [
   'mistralai/Mixtral-8x7B-Instruct-v0.1',
   'google/gemma-2-2b-it',
   'Qwen/Qwen2.5-72B-Instruct',
+  'mistralai/Mistral-7B-Instruct-v0.2',
+  'meta-llama/Meta-Llama-3.1-8B-Instruct',
 ];
 
 // ✅ Allow ALL origins — fixes all port issues (5173, 5174, 5175, etc.)
