@@ -4,9 +4,7 @@
   "framework": "vite",
   "rewrites": [
     { "source": "/api/chat", "destination": "https://rise-edege.onrender.com/api/chat" },
-    { "source": "/api/(.*)", "destination": "/api/$1" }
-  ],
-  "env": {
-    "VITE_API_URL": "https://rise-edege.onrender.com"
-  }
+    { "source": "/api/:path*", "destination": "/api/:path*" },
+    { "source": "/:path*", "destination": "/index.html" }
+  ]
 }
