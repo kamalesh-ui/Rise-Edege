@@ -17,8 +17,7 @@ const QUICK_PROMPTS = [
 
 // ─── Detect backend URL ────────────────────────────────────────────────────────
 // Falls back to localhost:3001 if VITE_API_URL is not set
-const API_BASE = import.meta.env.VITE_API_URL?.replace(/\/$/, '') || 'http://localhost:3001';
-
+const API_BASE = '';  // empty = use same domain (Vercel)
 export default function ChatPage() {
   const navigate = useNavigate();
   const [messages, setMessages] = useState<ChatMessage[]>([]);
